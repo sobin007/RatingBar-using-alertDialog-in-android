@@ -33,11 +33,15 @@
             android:id="@+id/tv_rating"
             android:gravity="center"
             android:text="0"/>
-        <RatingBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/ratingbar"
-            android:onClick="rating"/>
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:isIndicator="true"
+                android:onClick="rating" />
 
         </LinearLayout>
 
